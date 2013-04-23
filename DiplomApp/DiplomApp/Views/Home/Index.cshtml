@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div id="TargetDiv">
+</div>
+
+<span id="Example"></span>
+<br/>
+<canvas id="canvas" height="500" width="500"></canvas>
+
+<script>
+    var x = 0;
+    var prev = 0;
+    var span = document.getElementById("Example");
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext('2d');
+    ctx.translate(canvas.width / 2, canvas.height / 2);
+    
+    setInterval(start, 100);
+
+    function start() {
+        $.get("http://localhost:58638/Home/GetData", function (point) {
+            span.innerHTML = "x:" + point.X + " y:" + point.Y + " z:" + point.Z;
+            if (x != point.X) {
+                ctx.rotate((point.X - x) * Math.PI / 180);
+                x = point.X;
+            }
+        }).fail(function () { span.innerHTML = "error"; });
+    }
+
+    function render() {
+        ctx.clearRect(-250, -250, 500, 500);
+        ctx.fillStyle = "blue";
+        ctx.fillRect(150 / -2, 25 / -2, 150, 25);
+        requestAnimationFrame(render);
+    }
+    render();
+</script>
