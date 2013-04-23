@@ -4,6 +4,8 @@
     font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
     color: #232323;
     background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 header,
@@ -72,4 +74,28 @@ textarea
 .validation-summary-valid
 {
     display: none;
+}
+
+/*User Styles
+    --------------------------------------------------------*/
+header 
+{
+    height: 200px;
+    font-size: 50px;
+    background-color: #708090;
+    color: aqua;
+    border: #232323 2px solid;
+}
+
+header img 
+{
+    width: 250px;
+    height: 190px; 
+}
+
+body {
+    background-color: #708090;
+}
+
+canvas {
 }
