@@ -17,6 +17,16 @@ namespace DiplomApp.Controllers
             return View();
         }
 
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        public ActionResult Position()
+        {
+            return View();
+        }
+
         [HttpPost]
         public Action SetData(Point p)
         {
