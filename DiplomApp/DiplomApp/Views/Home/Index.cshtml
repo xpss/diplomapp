@@ -3,7 +3,13 @@
 }
 <span id="Example"></span>
 <br/>
-<canvas id="lesson04-canvas" style="border: none;" width="500" height="500"></canvas>
+<canvas id="canvas" style="border: none;" width="500" height="500"></canvas>
+
+<dialog></dialog>
+<time></time>
+<p>sdfg</p>
+<wbr/>
+<p>safdg</p>
 
 <script>
     var xy = 0;
@@ -269,7 +275,7 @@
 
 
     function webGLStart() {
-        var canvas = document.getElementById("lesson04-canvas");
+        var canvas = document.getElementById("canvas");
         initGL(canvas);
         initShaders()
         initBuffers();
