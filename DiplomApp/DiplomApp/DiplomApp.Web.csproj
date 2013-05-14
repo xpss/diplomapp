@@ -104,6 +104,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\DB.mdf" />
+    <Content Include="App_Data\DB_log.ldf">
+      <DependentUpon>DB.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\images\body_all_bckg.jpg" />
+    <Content Include="Content\images\body_top_bckg.jpg" />
+    <Content Include="Content\images\footer_bckg.jpg" />
+    <Content Include="Content\images\h1_bckg.jpg" />
+    <Content Include="Content\images\nexus.jpg" />
+    <Content Include="Content\images\sidebar_bottom.jpg" />
+    <Content Include="Content\images\sidebar_top.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -160,6 +171,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <None Include="Properties\PublishProfiles\iis.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\glMatrix-0.9.5.min.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
@@ -200,9 +212,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Position.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
