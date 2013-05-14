@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DiplomApp.Interfaces
 {
-    public class Class1
+    public class UserInterface
     {
     }
 }
